@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  ai:
+    openai:
+      # api身份识别
+      api-key: ***REMOVED_API_KEY***
+      # api的网络地址，中转服务器地址
+      base-url: https://api.gpts.vin
+      chat:
+        options:
+          model: gpt-4o
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/aidb?serverTimezone=UTC
+    username: root
+    password: ***REMOVED_DB_PASSWORD***
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
