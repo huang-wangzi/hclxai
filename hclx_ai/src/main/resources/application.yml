@@ -6,8 +6,8 @@ server:
 spring:
   ai:
     openai:
-      # api身份识别
-      api-key: ***REMOVED_API_KEY***
+      # api身份识别，本地密钥配置在application-dev.yml
+      api-key: 
       # api的网络地址，中转服务器地址
       base-url: https://api.gpts.vin
       chat:
@@ -16,8 +16,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/aidb?serverTimezone=UTC
-    username: root
-    password: ***REMOVED_DB_PASSWORD***
+    username: # 本地账号填写至application-dev.yml
+    password: # 本地密码填写至application-dev.yml
 
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml

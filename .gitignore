@@ -31,3 +31,18 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# 前端依赖、打包产物
+vue/node_modules/
+vue/dist/
+
+# 本地私有密钥配置，严禁提交远程
+hclx_ai/src/main/resources/application-dev.yml
+
+# 日志文件
+*.log
+debug.log
+
+# Windows/macOS系统垃圾文件
+.DS_Store
+Thumbs.db
